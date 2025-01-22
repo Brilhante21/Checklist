@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #d0d5d5; /* Fundo azul-escuro */
+    color: white;
+}
+
+header.cabecalho{
+    background-image: url('Design\ sem\ nome\ \(3\).png'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
+    background-size: contain; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    height: 600px; /* Define a altura do topo */
+    display: flex; /* Para alinhar o h1 */
+    justify-content: center; /* Centraliza horizontalmente o h1 */
+    align-items: center; /* Centraliza verticalmente o h1 */
+    color: white; /* Cor do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto para contraste */
+    margin-bottom: 100px;
+}
+
+/* Cabeçalhos */
+h1 {
+    margin-top: 20px;
+    font-size: 3em;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 2.5em;
+    color: #ecf0f1;
+}
+
+/* Div centralizada */
+.excel_checklist, .form_checklist {
+    margin: 20px auto; /* Centraliza horizontalmente */
+    width: 90%; /* Define a largura */
+    max-width: 1000px; /* Limita a largura */
+    background-color: #385E77; /* Cor de fundo da caixa */
+    padding: 70px;
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-bottom: 100px;
+}
+
+/* Estilização do iframe */
+.excel {
+    width: 100%; /* O iframe ocupa a largura completa da div */
+    height: 500px; /* Ajuste conforme necessário */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+.form{
+    width: 100%; /* O iframe ocupa a largura completa da div */
+    height: 800px; /* Ajuste conforme necessário */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-size: 0.9em;
+    border-radius: 10px;
+}
+/* Configurações para telas menores que 768px (tablets e celulares) */
+@media screen and (max-width: 768px) {
+
+    header.cabecalho{
+        background-size: contain;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    /* Ajustar margens e largura das divs */
+    .excel_checklist, .form_checklist {
+        width: 95%; /* Aumenta a largura relativa em telas pequenas */
+        padding: 10px; /* Reduz o padding */
+        font-size: 0.9em; /* Diminui a fonte */
+    }
+
+    /* Ajuste do iframe */
+    iframe {
+        height: 400px; /* Reduz a altura para caber melhor na tela */
+    }
+
+    /* Ajuste dos títulos */
+    h1 {
+        font-size: 1.5em; /* Título principal menor */
+    }
+
+    h2 {
+        font-size: 2rem; /* Subtítulos menores */
+    }
+
+    /* Footer mais compacto */
+    footer {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+}
+
+/* Configurações para telas menores que 480px (smartphones pequenos) */
+@media screen and (max-width: 480px) {
+    /* Ajustar ainda mais o layout */
+    .excel_checklist, .form_checklist {
+        padding: 8px; /* Reduz o espaçamento interno */
+    }
+
+    iframe {
+        height: 200px; /* Reduz a altura do iframe */
+    }
+
+    h1 {
+        font-size: 1.2em; /* Título principal ainda menor */
+    }
+
+    h2 {
+        font-size: 2em; /* Subtítulos mais compactos */
+    }
+
+    footer {
+        font-size: 0.7em;
+        padding: 6px;
+    }
+}
+
+
